@@ -100,7 +100,7 @@
 
     <section class="section-about">
       <div class="container">
-        <h2 class="title">
+        <h2 class="title section-about__title">
           О нас
         </h2>
         <p class="section-about__text">Идейные соображения высшего порядка, а также сложившаяся структура организации
@@ -114,7 +114,7 @@
 
     <section class="section-services">
       <div class="container">
-        <h2 class="title">
+        <h2 class="title section-services__titleheader">
           Услуги
         </h2>
         <ul class="section-services__list">
@@ -166,7 +166,7 @@
 
     <section class="section-benefits">
       <div class="container">
-        <h2 class="title">
+        <h2 class="title section-benefits__title">
           Преимущества
         </h2>
         <ul class="section-benefits__list">
@@ -521,7 +521,7 @@
 
     <section class="section-accommodation">
       <div class="container">
-        <h2 class="title">
+        <h2 class="title section-accommodation__title">
           Размещение
         </h2>
         <ul class="section-accommodation__list">
@@ -672,6 +672,152 @@
         </ul>
       </div>
     </section>
+
+    <section class="section-tour tour">
+      <div class="container tour__container">
+        <div class="tour__wraper">
+          <h2 class="title tour__title">
+            Хочу тур
+          </h2>
+          <form action="https://jsonplaceholder.typicode.com/posts" autocomplete method="POST" class="tour__form">
+            <ul class="tour__form-list">
+              <li class="tour__form-item">
+                <label for="sity" class="tour__label">Город вылета</label>
+                <select name="sity" id="sity">
+                  <option value="Санкт-Петербург">Санкт-Петербург</option>
+                  <option value="Москва">Москва</option>
+                  <option value="Казань">Казань</option>
+                  <option value="Сочи">Сочи</option>
+                </select>
+              </li>
+              <li class="tour__form-item">
+                <label for="country" class="tour__label">Страна</label>
+                <select name="country" id="country">
+                  <option value="Россия">Россия</option>
+                  <option value="Турция">Турция</option>
+                  <option value="Украина">Украина</option>
+                  <option value="Молдова">Молдова</option>
+                </select>
+              </li>
+              <li class="tour__form-item">
+                <label for="date" class="tour__label">Дата прибытия</label>
+                <input type="date" name="date" id="date" required>
+              </li>
+              <li class="tour__form-item">
+                <label for="night" class="tour__label">Ночей</label>
+                <input type="number" name="night" id="night" placeholder="6" required>
+              </li>
+              <li class="tour__form-item">
+                <label for="tourists" class="tour__label">Туристы</label>
+                <input type="number" name="tourists" id="tourists" placeholder="2" required>
+              </li>
+              <li class="tour__form-item">
+                <button type="submit" class="btn tour__btn"> Найти</button>
+              </li>
+            </ul>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-contact">
+      <div class="container section-contact__container">
+        <h2 class="title section-contact__title">
+          Контакты
+        </h2>
+        <div class="section-contact__content content-contact">
+          <div class="content-contact__left">
+            <ul class="content-contact__list">
+              <li class="content-contact__item">
+                <div class="content-contact__header">Адрес</div>
+                <div class="content-contact__description">
+                  <address>Москва, улица Юности, дом 5 строение 4, офис 2</address>
+                </div>
+              </li>
+              <li class="content-contact__item">
+                <div class="content-contact__header">Телефоны</div>
+                <div class="content-contact__description">
+                  <a href="tel:+74995356434">+7 (499) 535-64-34</a> <br>
+                  <a href="tel:+74950050544">+7 (495) 005-05-44</a>
+                </div>
+              </li>
+              <li class="content-contact__item">
+                <div class="content-contact__header">E-mail</div>
+                <div class="content-contact__description">
+                  <a href="mailto:lg.oona@mail.ru">lg.oona@mail.ru</a> <br> <span> по вопросам бронирования</span>
+                  <a href="mailto:hotels.ln@mail.ru">hotels.ln@mail.ru</a> <br> <span>по вопросам сотрудничества </span>
+                </div>
+              </li>
+              <li class="content-contact__item">
+                <div class="content-contact__header">График</div>
+                <div class="content-contact__description">
+                  <p>Понедельник - пятница, с 10:00 до 19:00</p>
+                </div>
+              </li>
+            </ul>
+            <button class="btn content-contact__btn">Построить маршрут</button>
+          </div>
+          <div class="content-contact__right">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="section-footer">
+      <div class="container section-footer__container">
+        <div class="section-footer__wraper">
+          <div class="section-footer__block-left">
+            <p class="section-footer__left-text">© 2012-2020 Управляющая компания Объединенной сети «Лагуна Хотелс»</p>
+            <p class="section-footer__left-text">Представленная на сайте информация носит справочный характер
+              и не является публичной офертой</p>
+            <a href="#" class="section-footer__left-contract">Пользовательское соглашение</a>
+          </div>
+          <div class="section-footer__block-center">
+            <address class="section-footer__center-address">11710, улица Юности, дом 5 строение 4, офис 2</address>
+            <div class="section-footer__center-link">
+              <div class="section-footer__center-phone">
+                <a href="tel:+74995356434">+7 (499) 535-64-34</a> <br>
+                <a href="tel:+74950050544">+7 (495) 005-05-44</a>
+              </div>
+              <div class="section-footer__center-mail">
+                <a href="mailto:lg.oona@mail.ru">lg.oona@mail.ru</a> <br>
+                <a href="mailto:hotels.ln@mail.ru">hotels.ln@mail.ru</a>
+              </div>
+            </div>
+          </div>
+          <div class="section-footer__block-right">
+            <ul class="section-footer__right-list">
+              <li class="section-footer__right-item">
+                <a href="#" class="section-footer__right-link">
+                  <span class="section-footer__right-icon section-footer__right-sova"></span>
+                </a>
+              </li>
+              <li class="section-footer__right-item">
+                <a href="#" class="section-footer__right-link">
+                  <span class="section-footer__right-icon section-footer__right-twitter"></span>
+                </a>
+              </li>
+              <li class="section-footer__right-item">
+                <a href="#" class="section-footer__right-link">
+                  <span class="section-footer__right-icon section-footer__right-facebook"></span>
+                </a>
+              </li>
+              <li class="section-footer__right-item">
+                <a href="#" class="section-footer__right-link">
+                  <span class="section-footer__right-icon section-footer__right-vk"></span>
+                </a>
+              </li>
+              <li class="section-footer__right-item">
+                <a href="#" class="section-footer__right-link">
+                  <span class="section-footer__right-icon section-footer__right-instagram"></span>
+                </a>
+              </li>
+            </ul>
+            <img src="/img/logo.svg" alt="логотип футера" class="section-footer__logo">
+          </div>
+        </div>
+      </div>
+    </footer>
   </main>
 </body>
 
