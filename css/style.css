@@ -208,7 +208,7 @@ input {
   margin-right: 9px;
   width: 21px;
   height: 12px;
-  background: url("/img/arrow-right.svg");
+  background: url("../img/arrow-right.svg");
 }
 
 .nav--header {
@@ -332,15 +332,15 @@ input {
 }
 
 .maldives {
-  background: linear-gradient(90deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0) 65.7%), url(/img/Rectangle-14.png);
+  background: linear-gradient(90deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0) 65.7%), url(../img/Rectangle-14.png);
 }
 
 .krit {
-  background: linear-gradient(90deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0) 65.7%), url(/img/Rectangle-15.png);
+  background: linear-gradient(90deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0) 65.7%), url(../img/Rectangle-15.png);
 }
 
 .luxe {
-  background: url(/img/33-1.png);
+  background: url(../img/33-1.png);
 }
 
 .section-about {
@@ -668,7 +668,7 @@ input {
 .content-contact__right {
   width: 653px;
   height: 528px;
-  background-image: url(/img/Layer-2-1.png);
+  background-image: url(../img/Layer-2-1.png);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -739,23 +739,23 @@ input {
 }
 
 .section-footer__right-sova {
-  background-image: url("/img/sova.svg");
+  background-image: url("../img/sova.svg");
 }
 
 .section-footer__right-twitter {
-  background-image: url("/img/twitter.svg");
+  background-image: url("../img/twitter.svg");
 }
 
 .section-footer__right-facebook {
-  background-image: url("/img/facebook.svg");
+  background-image: url("../img/facebook.svg");
 }
 
 .section-footer__right-vk {
-  background-image: url("/img/vk.svg");
+  background-image: url("../img/vk.svg");
 }
 
 .section-footer__right-instagram {
-  background-image: url("/img/instagram.svg");
+  background-image: url("../img/instagram.svg");
 }
 
 .section-footer__logo {
