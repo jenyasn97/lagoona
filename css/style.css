@@ -87,20 +87,30 @@ body a {
   color: black;
 }
 
+select,
+input {
+  font-size: 16px;
+  font-family: inherit;
+}
+
+input {
+  border-bottom: 1px solid #cccccc;
+}
+
 .btn {
   padding: 13px 19px;
+  border: 1px solid #cc9933;
+  border-radius: 10px;
   font-size: 16px;
   line-height: 16px;
   color: #cc9933;
   background-color: transparent;
-  border: 1px solid #cc9933;
-  border-radius: 10px;
+  transition: 0.3s linear;
 }
 
 .btn:hover {
   color: #fff;
   background: #cc9933;
-  transition: 0.3s linear;
 }
 
 .btn:active {
@@ -108,17 +118,17 @@ body a {
 }
 
 .title {
+  margin: 0 0 20px 40px;
   font-size: 40px;
   font-weight: 700;
   line-height: 40px;
   color: #333333;
-  margin: 0 0 20px 40px;
 }
 
 .container {
   margin: 0 auto;
-  max-width: 1200px;
   padding: 0 15px;
+  max-width: 1200px;
 }
 
 .more {
@@ -126,22 +136,22 @@ body a {
   font-size: 16px;
   line-height: 16px;
   color: #ffcc66;
+  transition: font-size 0.3s linear;
 }
 
 .more::after {
   content: "";
+  border-bottom: 2px solid #ffcc66;
+  border-right: 2px solid #ffcc66;
   display: inline-block;
   width: 11px;
   height: 11px;
   margin-left: 5px;
-  border-bottom: 2px solid #ffcc66;
-  border-right: 2px solid #ffcc66;
   transform: rotate(-45deg);
 }
 
 .more:hover {
   font-size: 18px;
-  transition: 0.3s linear;
 }
 
 .header__top {
@@ -158,13 +168,13 @@ body a {
 }
 
 .header__bottom {
+  border-radius: 15px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   min-height: 70px;
   height: 100%;
   background: #fff;
-  border-radius: 15px;
 }
 
 .header__nav {
@@ -180,8 +190,8 @@ body a {
 }
 
 .left--header__link {
-  font-weight: 700;
   font-size: 20px;
+  font-weight: 700;
   line-height: 20px;
   color: #666666;
 }
@@ -195,10 +205,10 @@ body a {
 .right--header__link::before {
   content: "";
   display: inline-block;
+  margin-right: 9px;
   width: 21px;
   height: 12px;
   background: url("/img/arrow-right.svg");
-  margin-right: 9px;
 }
 
 .nav--header {
@@ -208,10 +218,10 @@ body a {
 .nav--header:after {
   content: "";
   position: absolute;
-  width: 1px;
-  height: 50px;
   right: -55px;
   top: -17px;
+  width: 1px;
+  height: 50px;
   background: #e1e1e1;
 }
 
@@ -231,11 +241,11 @@ body a {
 
 .nav--header__link {
   color: #666666;
+  transition: color 0.3s linear;
 }
 
 .nav--header__link:hover {
   color: #cc9933;
-  transition: 0.3s linear;
 }
 
 .btn--header__button:not(:last-child) {
@@ -299,9 +309,9 @@ body a {
 
 .contenet--special__right-link {
   display: block;
+  padding: 211px 40px 40px;
   width: 573px;
   height: 540px;
-  padding: 211px 40px 40px;
 }
 
 .contenet--special__right-text {
@@ -375,8 +385,8 @@ body a {
 
 .section-services__text {
   padding: 26px 126px 32px 45px;
-  background: #fff;
   border-radius: 0 0 15px 15px;
+  background: #fff;
 }
 
 .section-services__title {
@@ -451,6 +461,7 @@ body a {
 .section-accommodation__item {
   max-width: 374px;
   min-height: 440px;
+  transition: transform 0.3s linear;
 }
 
 .section-accommodation__item:not(:nth-child(3n)) {
@@ -459,12 +470,11 @@ body a {
 
 .section-accommodation__item:hover {
   transform: scale(1.01);
-  transition: 0.3s linear;
 }
 
 .section-accommodation__info {
-  background: #fff;
   padding: 36px 45px 41px;
+  background: #fff;
 }
 
 .section-accommodation__link {
@@ -482,9 +492,9 @@ body a {
 }
 
 .info {
+  border-radius: 0 0 15px 15px;
   font-size: 16px;
   line-height: 16px;
-  border-radius: 0 0 15px 15px;
 }
 
 .info__price {
@@ -581,9 +591,9 @@ body a {
 .tour__form-item::after {
   content: "";
   position: absolute;
+  left: -29px;
   width: 1px;
   height: 45px;
-  left: -29px;
   background: #e1e1e1;
 }
 
@@ -597,16 +607,6 @@ body a {
 
 .tour__btn {
   padding: 13px 30px;
-}
-
-select,
-input {
-  font-size: 16px;
-  font-family: inherit;
-}
-
-input {
-  border-bottom: 1px solid #cccccc;
 }
 
 .section-contact {
@@ -687,11 +687,11 @@ input {
   display: flex;
   position: relative;
   padding: 45px 52px;
-  background-color: #333333;
+  border-radius: 15px;
   font-size: 16px;
   line-height: 190%;
   color: #ffffff;
-  border-radius: 15px;
+  background-color: #333333;
 }
 
 .section-footer__wraper a {
